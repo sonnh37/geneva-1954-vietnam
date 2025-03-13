@@ -1,23 +1,8 @@
-import FeatureCard from "@/components/feature-card";
-import FloatingOrbsFeatures from "@/components/floating-orbs-features";
-import StorySection from "@/components/story-section";
-import useScrollOnHashChange from "@/hooks/useScrollOnHashChange";
-import { scrollToSection } from "@/lib/utils";
 import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  Briefcase,
-  Computer,
-  GraduationCap,
-  Share2,
-  Stethoscope,
-  TrendingUp,
-} from "lucide-react";
 import { useRouter } from "next/navigation";
 
 const SectionSix = () => {
   const router = useRouter();
-  // useScrollOnHashChange();
   const section3 = "/thumbnail.jpg";
   const bgImage = "https://baotiengdan.com/wp-content/uploads/2020/04/1-4.jpeg";
   const title = "IV. Câu hỏi thảo luận";

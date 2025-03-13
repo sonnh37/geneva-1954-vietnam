@@ -1,17 +1,12 @@
 import FeatureCard from "@/components/feature-card";
-import FloatingOrbsFeatures from "@/components/floating-orbs-features";
 import StorySection from "@/components/story-section";
-import useScrollOnHashChange from "@/hooks/useScrollOnHashChange";
-import { scrollToSection } from "@/lib/utils";
-import { motion } from "framer-motion";
-import { ArrowRight, Briefcase, Share2, TrendingUp } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 const SectionFive = () => {
   const router = useRouter();
-  // useScrollOnHashChange();
   const section3 = "/thumbnail.jpg";
-  
+
   return (
     <StorySection
       id="section5"

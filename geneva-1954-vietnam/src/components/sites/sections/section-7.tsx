@@ -1,18 +1,9 @@
-import FloatingOrbsFeatures from "@/components/floating-orbs-features";
 import StorySection from "@/components/story-section";
-import useScrollOnHashChange from "@/hooks/useScrollOnHashChange";
-import { scrollToSection } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ArrowRight, Briefcase, Share2, TrendingUp } from "lucide-react";
-import { useRouter } from "next/navigation";
 
 const SectionSeven = () => {
   return (
-    <StorySection
-      id="section7"
-      bgImage="end.jpg"
-      title="Tổng kết"
-    >
+    <StorySection id="section7" bgImage="end.jpg" title="Tổng kết">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

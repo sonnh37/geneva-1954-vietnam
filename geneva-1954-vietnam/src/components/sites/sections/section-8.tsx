@@ -1,10 +1,5 @@
-import FloatingOrbsFeatures from "@/components/floating-orbs-features";
 import StorySection from "@/components/story-section";
-import useScrollOnHashChange from "@/hooks/useScrollOnHashChange";
-import { scrollToSection } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ArrowRight, Briefcase, Share2, TrendingUp } from "lucide-react";
-import { useRouter } from "next/navigation";
 
 const SectionEight = () => {
   return (

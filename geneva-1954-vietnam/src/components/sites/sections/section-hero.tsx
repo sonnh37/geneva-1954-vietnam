@@ -1,6 +1,4 @@
-import StorySection from "@/components/story-section";
 import { Button } from "@/components/ui/button";
-import useScrollOnHashChange from "@/hooks/useScrollOnHashChange";
 import { scrollToSection } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
