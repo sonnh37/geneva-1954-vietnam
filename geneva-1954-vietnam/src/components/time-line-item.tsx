@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface TimelineItemProps {
   year: string;
@@ -6,6 +7,7 @@ interface TimelineItemProps {
   description: string;
   isRight: boolean;
   image: string;
+  height?: string;
 }
 
 const TimelineItem = ({
@@ -14,6 +16,7 @@ const TimelineItem = ({
   description,
   isRight,
   image,
+  height = undefined,
 }: TimelineItemProps) => (
   <div className="relative w-full mb-16">
     <div className="md:flex items-center justify-between">
@@ -23,13 +26,18 @@ const TimelineItem = ({
         whileInView={{ opacity: 1, x: 0 }}
         className={`w-full md:w-[42%] ${isRight ? "md:order-2" : "md:order-1"}`}
       >
-        <div className="relative h-64 md:h-80 rounded-xl overflow-hidden">
-          <img
+        <div
+          className={`relative h-64 md:h-${
+            height || "80"
+          } rounded-xl overflow-hidden`}
+        >
+          <Image
+            width={9999}
+            height={9999}
             src={image}
             alt={title}
-            className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+            className="w-full h-full object-contain transition-transform duration-500 hover:scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         </div>
       </motion.div>
 

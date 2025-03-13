@@ -1,5 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
 import TableOfContents from "../table-content";
 import TimelineNav from "../time-line-nav";
 import SectionOne from "./sections/section-1";
@@ -11,17 +10,14 @@ import SectionHero from "./sections/section-hero";
 const section3 = "/thumbnail.jpg";
 
 const StorytellingPage = () => {
-  
-
   return (
     <div className="bg-black h-screen snap-y snap-mandatory overflow-y-scroll">
       {/* Outline */}
       <TimelineNav />
       <TableOfContents />
-      
       {/* Hero Section */}
       <SectionHero />
-
+      
       {/* Section 1: Quan điểm cơ bản */}
       <SectionOne />
 

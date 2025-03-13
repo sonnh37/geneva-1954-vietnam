@@ -1,4 +1,8 @@
-"use client"
+"use client";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -20,10 +24,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   useScrollOnHashChange();
+
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
+        
       >
         {children}
       </body>
