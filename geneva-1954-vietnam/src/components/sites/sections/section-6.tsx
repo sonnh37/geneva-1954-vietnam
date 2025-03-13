@@ -150,24 +150,6 @@ const SectionSix = () => {
                 </ul>
               </div>
             </div>
-
-            {/* 3. Kết luận */}
-            <div className="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-white/20">
-              <h3 className="text-2xl font-bold text-white mb-4">
-                3. Kết luận
-              </h3>
-              <div className="text-white/80 space-y-4">
-                <p>
-                  Bác sĩ, giảng viên, và IT không hoàn toàn thuộc giai cấp công
-                  nhân theo định nghĩa truyền thống của chủ nghĩa Mác – Lênin.
-                </p>
-                <p>
-                  Tuy nhiên, trong bối cảnh kinh tế tri thức, họ là bộ phận lao
-                  động trí thức gắn bó mật thiết với giai cấp công nhân, góp
-                  phần thúc đẩy sự phát triển xã hội và nền kinh tế.
-                </p>
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>
