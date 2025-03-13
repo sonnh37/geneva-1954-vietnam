@@ -8,6 +8,7 @@ interface TimelineNavProps {
 const TimelineNav = () => {
   const sections = [
     { id: "hero", label: "Giới thiệu" },
+    { id: "section0", label: "0" },
     { id: "section1", label: "Quan điểm cơ bản" },
     { id: "section2", label: "Thực hiện sứ mệnh" },
     { id: "section3", label: "Sứ mệnh GCCN Việt Nam" },
@@ -20,6 +21,7 @@ const TimelineNav = () => {
   useEffect(() => {
     const sections = [
       "hero",
+      "section0",
       "section1",
       "section2",
       "section3",

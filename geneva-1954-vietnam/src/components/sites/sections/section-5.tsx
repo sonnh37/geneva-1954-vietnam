@@ -1,3 +1,4 @@
+import FeatureCard from "@/components/feature-card";
 import FloatingOrbsFeatures from "@/components/floating-orbs-features";
 import StorySection from "@/components/story-section";
 import useScrollOnHashChange from "@/hooks/useScrollOnHashChange";
@@ -10,28 +11,60 @@ const SectionFive = () => {
   const router = useRouter();
   // useScrollOnHashChange();
   const section3 = "/thumbnail.jpg";
+  
   return (
     <StorySection
-      id="thanks"
-      bgImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
-      title="Lời cảm ơn"
+      id="section5"
+      bgImage="https://tapchicongsan.org.vn/image/journal/article?img_id=183555343&t=1652448799191"
+      title="Kinh nghiệm lãnh đạo của Đảng"
     >
-      <div className="max-w-4xl mx-auto text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-white/20"
-        >
-          <h3 className="text-3xl font-bold text-white mb-6">
-            Cảm ơn quý thầy cô và các bạn đã theo dõi
-          </h3>
-          <div className="text-white/80 space-y-4">
-            <p className="text-xl">
-              Chúc quý thầy cô và các bạn nhiều sức khỏe và thành công!
-            </p>
-            <p className="italic">"Học, học nữa, học mãi" - V.I.Lenin</p>
-          </div>
-        </motion.div>
+      <div className="max-w-6xl mx-auto px-4 space-y-6">
+        <FeatureCard
+          icon={ArrowRight}
+          title="Giữ vững và phát huy vai trò lãnh đạo của Đảng"
+          description="Đảng đề ra đường lối đúng đắn, phù hợp với thực tiễn cách mạng Việt Nam.
+Đặt lợi ích dân tộc lên hàng đầu, kiên định mục tiêu giải phóng và thống nhất đất nước.
+"
+        />
+        <FeatureCard
+          icon={ArrowRight}
+          title="Phát huy sức mạnh đoàn kết toàn dân tộc
+"
+          description={`Huy động toàn dân tham gia kháng chiến với tinh thần "Toàn dân, toàn diện".
+Kết hợp đấu tranh chính trị, ngoại giao và quân sự để giành thắng lợi.
+
+`}
+        />
+        <FeatureCard
+          icon={ArrowRight}
+          title="Kết hợp sức mạnh dân tộc và sức mạnh thời đại
+"
+          description="Tận dụng sự giúp đỡ từ các nước xã hội chủ nghĩa, nhất là Liên Xô và Trung Quốc.
+Tranh thủ sự ủng hộ của nhân dân yêu chuộng hòa bình trên thế giới.
+
+"
+        />
+        <FeatureCard
+          icon={ArrowRight}
+          title="Sáng tạo trong chiến lược và chiến thuật quân sự
+"
+          description={`Đề ra chiến lược đấu tranh linh hoạt: "Tiến công - Nổi dậy", kết hợp đấu tranh quân sự và chính trị.
+Áp dụng nghệ thuật quân sự đặc sắc: đánh du kích, đánh chính quy, phối hợp nhịp nhàng giữa các mặt trận.
+
+
+`}
+        />
+        <FeatureCard
+          icon={ArrowRight}
+          title="Xây dựng hậu phương vững mạnh
+
+"
+          description="Miền Bắc trở thành hậu phương lớn, đáp ứng nhu cầu vật chất và nhân lực cho kháng chiến.
+Tổ chức tốt công tác hậu cần, bảo đảm sức chiến đấu lâu dài.
+
+
+"
+        />
       </div>
     </StorySection>
   );

@@ -26,18 +26,18 @@ const StorySection = ({
         filter: "brightness(0.3)",
       }}
     />
-    <div className="relative z-10 container mx-auto px-4 py-20">
+    <div className="relative z-10 container flex justify-center flex-col items-center  mx-auto px-4 py-8">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center mb-16"
+        className="w-fit mb-16"
       >
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <h3 className="scroll-m-20 text-center text-white text-3xl font-semibold tracking-wide">
           {title}
-        </h2>
+        </h3>
         {subtitle && (
-          <p className="text-xl text-white/80 max-w-2xl mx-auto">{subtitle}</p>
+          <p className="text-xl text-center text-white/80 max-w-2xl mx-auto">{subtitle}</p>
         )}
       </motion.div>
       {children}

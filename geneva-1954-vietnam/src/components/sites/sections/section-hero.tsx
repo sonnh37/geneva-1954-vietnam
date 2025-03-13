@@ -1,4 +1,5 @@
 import StorySection from "@/components/story-section";
+import { Button } from "@/components/ui/button";
 import useScrollOnHashChange from "@/hooks/useScrollOnHashChange";
 import { scrollToSection } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -28,19 +29,20 @@ const SectionHero = () => {
       />
 
       {/* Header */}
-      
+
       <div className="h-full flex flex-col items-center justify-center w-full z-10">
         <div className="z-10 text-center py-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="space-y-2"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="scroll-m-20 text-white text-4xl font-extrabold tracking-wide lg:text-5xl">
               {title}
-            </h2>
+            </h1>
             {subtitle && (
-              <p className="text-xl text-white/80 max-w-2xl mx-auto">
+              <p className="text-lg tracking-wide text-muted-foreground">
                 {subtitle}
               </p>
             )}
@@ -52,12 +54,13 @@ const SectionHero = () => {
           transition={{ delay: 0.5 }}
           className="text-center"
         >
-          <button
-            onClick={() => scrollToSection("section1")}
-            className="inline-flex items-center gap-2 text-white border border-white/30 rounded-full px-6 py-3 hover:bg-white/10 transition-colors"
+          <Button
+            onClick={() => scrollToSection("section0")}
+            variant={"destructive"}
+            size={"lg"}
           >
             Khám phá <ArrowRight className="w-4 h-4" />
-          </button>
+          </Button>
         </motion.div>
       </div>
     </section>

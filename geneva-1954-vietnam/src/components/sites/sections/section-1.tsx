@@ -17,7 +17,7 @@ import TimelineItem from "@/components/time-line-item";
 
 const SectionOne = () => {
   const bgImage =
-    "https://baothanhhoa.vn/thumbnail/news/boi-canh-dat-nuoc-va-y-chi-khat-vong-thong-nhat-to-quoc-sau-hiep-dinh-gionevo-nam-1954-di2443d205d1073940t6434l9.jpg";
+    "https://tse2.mm.bing.net/th?id=OIP.c8KuSTS7m4y2XKOSyNP37wHaF_&pid=Api";
   const title = "Bối cảnh lịch sử";
   const subtitle = undefined;
 
@@ -42,9 +42,9 @@ const SectionOne = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-2xl md:text-5xl font-bold text-white mb-4">
+          <h3 className="scroll-m-20 text-white text-3xl font-semibold tracking-wide">
             {title}
-          </h2>
+          </h3>
 
           {subtitle && (
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
@@ -67,48 +67,49 @@ const SectionOne = () => {
           ]}
           spaceBetween={50}
           slidesPerView={1}
-          pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           keyboard={{ enabled: true }} // Điều khiển bằng phím mũi tên
           mousewheel={{ forceToAxis: true }} // Điều khiển bằng cuộn chuột
           className="w-full h-full"
         >
           <SwiperSlide>
-            <div className="max-w-6xl mx-auto px-4">
-              <TimelineItem
-                year="1. Bối cảnh hiện nay"
-                title=""
-                description="Sau Hiệp định Genève (1954), đất nước tạm thời bị chia cắt thành hai miền."
-                isRight={false}
-                image="https://ungdungmoi.edu.vn/wp-content/uploads/2018/01/ban-do-lanh-tho-viet-nam-qua-cac-thoi-ky70.jpg"
-                height="120"
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="max-w-6xl mx-auto px-4">
-              <TimelineItem
-                year=""
-                title=""
-                description="Mỹ không thực hiện tổng tuyển cử thống nhất đất nước, thay vào đó dựng lên chính quyền Ngô Đình Diệm ở miền Nam và tiến hành chiến tranh xâm lược.
+            <div className="max-w-7xl mx-auto">
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <TimelineItem
+                    year=""
+                    title=""
+                    description="Sau Hiệp định Genève (1954), đất nước tạm thời bị chia cắt thành hai miền."
+                    isRight={false}
+                    image="https://ungdungmoi.edu.vn/wp-content/uploads/2018/01/ban-do-lanh-tho-viet-nam-qua-cac-thoi-ky70.jpg"
+                    height="120"
+                  />
+                </div>
+
+                <div>
+                  <TimelineItem
+                    year=""
+                    title=""
+                    description="Từ năm 1965, Mỹ leo thang chiến tranh, trực tiếp đưa quân vào miền Nam và mở rộng chiến tranh ra miền Bắc.
 "
-                isRight={false}
-                image="https://nghiencuuquocte.org/wp-content/uploads/2015/10/Diem-1956.jpg"
-                height="120"
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="max-w-6xl mx-auto px-4">
-              <TimelineItem
-                year=""
-                title=""
-                description="Từ năm 1965, Mỹ leo thang chiến tranh, trực tiếp đưa quân vào miền Nam và mở rộng chiến tranh ra miền Bắc.
+                    isRight={false}
+                    image="https://tse1.mm.bing.net/th?id=OIP._1bBca5ODM7JHvgJekYkWgHaEw&pid=Api"
+                    height="120"
+                  />
+                </div>
+                <div className="col-span-2">
+                  {" "}
+                  <TimelineItem
+                    year=""
+                    title=""
+                    description="Mỹ không thực hiện tổng tuyển cử thống nhất đất nước, thay vào đó dựng lên chính quyền Ngô Đình Diệm ở miền Nam và tiến hành chiến tranh xâm lược.
 "
-                isRight={false}
-                image="https://tse1.mm.bing.net/th?id=OIP._1bBca5ODM7JHvgJekYkWgHaEw&pid=Api"
-                height="120"
-              />
+                    isRight={false}
+                    image="https://nghiencuuquocte.org/wp-content/uploads/2015/10/Diem-1956.jpg"
+                    height="120"
+                  />
+                </div>
+              </div>
             </div>
           </SwiperSlide>
         </Swiper>

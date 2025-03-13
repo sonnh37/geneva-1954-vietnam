@@ -6,15 +6,14 @@ import { motion } from "framer-motion";
 import { ArrowRight, Briefcase, Share2, TrendingUp } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-const SectionThree = () => {
+const SectionZero = () => {
   const router = useRouter();
   // useScrollOnHashChange();
-  const bgImage =
-    "https://tapchilichsudang.vn/pic/AboutUs/ttxvndong_638179466148634935_HasThumb.jpg";
 
-  const title =
-    "II. Ý nghĩa lịch sử và kinh nghiệm lãnh đạo của Đảng thời kỳ 1954 - 1975";
-  const id = "section3";
+  const bgImage =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvrGRYjxd84FsQNl2p3JI_PpnXVxZsnK9_FA&s";
+  const title = "I. Lãnh đạo cách mạng cả nước (1965 - 1975)";
+  const id = "section0";
   return (
     <section
       id={id}
@@ -43,4 +42,4 @@ const SectionThree = () => {
   );
 };
 
-export default SectionThree;
+export default SectionZero;
