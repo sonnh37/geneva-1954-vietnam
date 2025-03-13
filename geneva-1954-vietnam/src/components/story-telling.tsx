@@ -221,7 +221,8 @@ const StorytellingPage = () => {
 
   return (
     <div className="bg-black min-h-screen snap-y snap-mandatory overflow-y-auto">
-      <TimelineNav currentSection={currentSection} />
+      {/* <TimelineNav currentSection={currentSection} /> */}
+      <TableOfContents scrollToSection={scrollToSection} />
       {/* Hero Section */}
       <StorySection
         id="hero"
@@ -244,7 +245,6 @@ const StorytellingPage = () => {
         </motion.div>
       </StorySection>
 
-      <TableOfContents scrollToSection={scrollToSection} />
 
       {/* Section 1: Quan điểm cơ bản */}
       <StorySection

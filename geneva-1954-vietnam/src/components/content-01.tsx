@@ -16,7 +16,7 @@ import {
   Check,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import heroImage from "../assets/thumbnail.jpg";
+const  heroImage = "/thumbnail.jpg";
 
 import { ReactNode } from "react";
 

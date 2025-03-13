@@ -1,12 +1,19 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { Menu, ChevronRight } from "lucide-react";
-
+import { Button } from "@/components/ui/button";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 interface TableOfContentsProps {
   scrollToSection: (id: string) => void;
 }
 
-const TableOfContents: React.FC<TableOfContentsProps> = ({ scrollToSection }) => {
+const TableOfContents: React.FC<TableOfContentsProps> = ({
+  scrollToSection,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const contents = [
@@ -45,22 +52,16 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ scrollToSection }) =>
 
   return (
     <div className="fixed left-8 top-8 z-50">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full text-white border border-white/20 hover:bg-white/20 transition-all"
-      >
-        <Menu className="w-5 h-5" />
-        <span>Mục lục</span>
-      </button>
-
-      <div
-        className={`mt-4 transition-all duration-300 ${
-          isOpen
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 -translate-y-4 pointer-events-none"
-        }`}
-      >
-        <div className="bg-black/80 backdrop-blur-md rounded-2xl p-4 border border-white/20 w-72">
+      <Popover>
+        <PopoverTrigger asChild>
+          <Button
+            variant="outline"
+            className="bg-transparent cursor-pointer text-white border border-white/20"
+          >
+            <Menu className="size-5" />
+          </Button>
+        </PopoverTrigger>
+        <PopoverContent className="w-80 bg-black/80 backdrop-blur-md border border-white/20">
           {contents.map((item, index) => (
             <div
               key={item.id}
@@ -79,8 +80,8 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ scrollToSection }) =>
               <ChevronRight className="w-4 h-4 text-white/40 group-hover:text-white transition-colors" />
             </div>
           ))}
-        </div>
-      </div>
+        </PopoverContent>
+      </Popover>
     </div>
   );
 };
