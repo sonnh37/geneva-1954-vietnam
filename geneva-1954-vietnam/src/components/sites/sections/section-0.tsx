@@ -1,15 +1,8 @@
-import FloatingOrbsFeatures from "@/components/floating-orbs-features";
-import StorySection from "@/components/story-section";
-import useScrollOnHashChange from "@/hooks/useScrollOnHashChange";
-import { scrollToSection } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ArrowRight, Briefcase, Share2, TrendingUp } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 const SectionZero = () => {
   const router = useRouter();
-  // useScrollOnHashChange();
-
   const bgImage =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvrGRYjxd84FsQNl2p3JI_PpnXVxZsnK9_FA&s";
   const title = "I. Lãnh đạo cách mạng cả nước (1965 - 1975)";
