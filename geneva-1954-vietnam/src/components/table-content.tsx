@@ -7,13 +7,10 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-interface TableOfContentsProps {
-  scrollToSection: (id: string) => void;
-}
+import { scrollToSection } from "@/lib/utils";
 
-const TableOfContents: React.FC<TableOfContentsProps> = ({
-  scrollToSection,
-}) => {
+
+const TableOfContents: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const contents = [
