@@ -8,11 +8,15 @@ interface TimelineNavProps {
 const TimelineNav = () => {
   const sections = [
     { id: "hero", label: "Giới thiệu" },
-    { id: "section0", label: "0" },
-    { id: "section1", label: "Quan điểm cơ bản" },
-    { id: "section2", label: "Thực hiện sứ mệnh" },
-    { id: "section3", label: "Sứ mệnh GCCN Việt Nam" },
-    { id: "section4", label: "Thảo luận" },
+    { id: "section0", label: "I. Lãnh đạo cách mạng cả nước (1965 - 1975)" },
+    { id: "section1", label: "Bối cảnh lịch sử" },
+    { id: "section2", label: "Lãnh đạo cuộc kháng chiến chống Mỹ cứu nước - Miền Bắc" },
+    { id: "section2-1", label: "Lãnh đạo cuộc kháng chiến chống Mỹ cứu nước - Miền Nam" },
+    { id: "section3", label: "II. Ý nghĩa lịch sử và kinh nghiệm lãnh đạo của Đảng thời kỳ 1954 - 1975" },
+    { id: "section4", label: "Ý nghĩa lịch sử" },
+    { id: "section5", label: "Kinh nghiệm lãnh đạo của Đảng" },
+    { id: "section6", label: "Thảo luận" },
+    { id: "section7", label: "Tổng kết" },
     { id: "thanks", label: "Kết thúc" },
   ];
 
@@ -24,8 +28,13 @@ const TimelineNav = () => {
       "section0",
       "section1",
       "section2",
+      "section2-1",
       "section3",
       "section4",
+      "section5",
+      "section6",
+      "section7",
+      "section8",
       "thanks",
     ];
 

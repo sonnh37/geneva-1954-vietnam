@@ -5,7 +5,7 @@ const SectionSix = () => {
   const router = useRouter();
   const section3 = "/thumbnail.jpg";
   const bgImage = "https://baotiengdan.com/wp-content/uploads/2020/04/1-4.jpeg";
-  const title = "IV. Câu hỏi thảo luận";
+  const title = "Câu hỏi thảo luận";
   const subtitle =
     "Vì sao Mỹ và chính quyền Ngô Đình Diệm phải thực hiện chính sách di cư sau Hiệp định Genève (1954-1975)?";
   const id = "section6";

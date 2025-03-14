@@ -15,30 +15,30 @@ const TableOfContents: React.FC = () => {
 
   const contents = [
     {
-      title: "Sứ Mệnh Lịch Sử của Giai Cấp Công Nhân",
+      title: "Thống nhất đất nước (1945-1975)",
       id: "hero",
-      icon: "🎯",
+      icon: "",
     },
     {
-      title: "I. Quan điểm cơ bản của chủ nghĩa Mác-Lênin",
-      id: "section1",
-      icon: "📚",
+      title: "I. Lãnh đạo cách mạng cả nước (1965 - 1975)",
+      id: "section0",
+      icon: "",
     },
     {
       title:
-        "II. Giai cấp công nhân và việc thực hiện sứ mệnh lịch sử hiện nay",
-      id: "section2",
-      icon: "⚡",
-    },
-    {
-      title: "III. Sứ mệnh lịch sử của giai cấp công nhân Việt Nam",
+        "II. Ý nghĩa lịch sử và kinh nghiệm lãnh đạo của Đảng thời kỳ 1954 - 1975",
       id: "section3",
-      icon: "🌟",
+      icon: "",
     },
     {
-      title: "IV. Câu hỏi thảo luận",
-      id: "section4",
-      icon: "💭",
+      title: "Câu hỏi thảo luận",
+      id: "section6",
+      icon: "",
+    },
+    {
+      title: "Tổng kết",
+      id: "section7",
+      icon: "",
     },
     {
       title: "Lời cảm ơn",
@@ -48,7 +48,7 @@ const TableOfContents: React.FC = () => {
   ];
 
   return (
-    <div className="fixed left-8 top-8 z-50">
+    <div className="fixed left-4 top-4 md:left-8 md:top-8 z-50">
       <Popover>
         <PopoverTrigger asChild>
           <Button
@@ -58,7 +58,7 @@ const TableOfContents: React.FC = () => {
             <Menu className="size-5" />
           </Button>
         </PopoverTrigger>
-        <PopoverContent className="w-80 bg-black/80 backdrop-blur-md border border-white/20">
+        <PopoverContent className="w-65 sm:w-80 bg-black/30 backdrop-blur-md border border-white/20 ml-4 md:ml-8">
           {contents.map((item, index) => (
             <div
               key={item.id}

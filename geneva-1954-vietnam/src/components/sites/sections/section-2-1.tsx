@@ -63,7 +63,7 @@ const SectionTwoOne = () => {
       {/* Swiper */}
       <div className="h-full flex items-center justify-center w-full z-10">
         <div className="mx-auto w-full px-4 space-y-6">
-          <div className="flex justify-center gap-x-96 flex-wrap ">
+          <div className="flex justify-center gap-x-20 md:gap-x-96 flex-wrap ">
             <div>
               <Avatar className="size-16">
                 <AvatarImage src="/vietnam.png" alt="@shadcn" />

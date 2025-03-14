@@ -20,24 +20,13 @@ const StorytellingPage = () => {
       {/* Outline */}
       <TimelineNav />
       <TableOfContents />
-      {/* Hero Section */}
       <SectionHero />
       <SectionZero />
-
-      {/* Section 1: Quan điểm cơ bản */}
       <SectionOne />
-
-      {/* Section 2: Giai cấp công nhân hiện nay */}
       <SectionTwo />
       <SectionTwoOne />
-
-      {/* Section 3: Sứ mệnh lịch sử của GCCN Việt Nam */}
       <SectionThree />
-
-      {/* Section 4: Thảo luận */}
       <SectionFour />
-
-      {/* Section 5: Lời cảm ơn */}
       <SectionFive />
       <SectionSix />
       <SectionSeven />

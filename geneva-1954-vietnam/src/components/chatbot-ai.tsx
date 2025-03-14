@@ -25,21 +25,16 @@ const INTRODUCTION = {
   name: "4.0 - Bees",
   greeting: `### Xin chào! Tôi là Bees.
 
-Tôi được trang bị kiến thức chuyên sâu về:
-
-* Quan điểm của chủ nghĩa Mác-Lênin về giai cấp công nhân
-* Sứ mệnh lịch sử của giai cấp công nhân
-* Thực trạng và thách thức hiện nay
-* Vai trò của giai cấp công nhân Việt Nam
+Tôi có thể giúp bạn trả lời các câu hỏi về lịch sử, chính trị, xã hội, văn hóa, và nhiều lĩnh vực khác.
 
 Bạn có thể chọn một trong các câu hỏi gợi ý hoặc tự đặt câu hỏi. Tôi sẽ cố gắng trả lời chi tiết và chính xác nhất!`,
 };
 
 const predefinedPrompts = [
-  "Khái niệm và đặc điểm cơ bản của giai cấp công nhân là gì?",
-  "Sứ mệnh lịch sử thế giới của giai cấp công nhân trong bối cảnh hiện nay?",
-  "Vai trò của giai cấp công nhân Việt Nam trong thời kỳ đổi mới?",
-  "Bác sĩ, giảng viên, IT hiện nay có phải là giai cấp công nhân không?",
+  'Vì sao Mỹ quyết định đưa quân vào Việt Nam vào năm 1965, và chiến lược "Chiến tranh cục bộ" có những đặc điểm gì?',
+  "Phong trào chiến đấu và sản xuất ở miền Bắc trong giai đoạn 1965 - 1975 được thể hiện qua những khẩu hiệu và phong trào tiêu biểu nào?",
+  "Chiến dịch Hồ Chí Minh có vai trò như thế nào trong việc giải phóng miền Nam và thống nhất đất nước?",
+  "Những bài học kinh nghiệm quan trọng từ cuộc kháng chiến chống Mỹ (1954 - 1975) có ý nghĩa gì đối với công cuộc xây dựng và bảo vệ đất nước ngày nay?",
 ];
 
 interface FloatingButtonProps {

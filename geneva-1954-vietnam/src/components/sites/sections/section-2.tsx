@@ -28,7 +28,7 @@ const SectionTwo = () => {
   return (
     <section
       id={"section2"}
-      className="h-screen relative flex flex-col justify-between overflow-hidden snap-start"
+      className="min-h-screen relative flex flex-col justify-between overflow-hidden snap-start"
     >
       {/* Background Image */}
       <div
