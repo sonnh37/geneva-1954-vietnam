@@ -15,7 +15,7 @@ const TableOfContents: React.FC = () => {
 
   const contents = [
     {
-      title: "Thống nhất đất nước (1945-1975)",
+      title: "Thống nhất đất nước (1954-1975)",
       id: "hero",
       icon: "",
     },

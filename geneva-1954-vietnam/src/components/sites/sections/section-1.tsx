@@ -1,6 +1,7 @@
 import { Timeline } from "@/components/ui/timeline";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { title } from "process";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -11,17 +12,43 @@ const data = [
     content: (
       <div>
         <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-8">
-          Sau Hiệp định Genève (1954), đất nước tạm thời bị chia cắt thành hai
-          miền.
+          8/3/1965, Mỹ chính thức đưa quân vào Việt Nam: lính thủy đánh bộ Mỹ đổ
+          bộ vào Đà Nẵng, mở đầu chiến lược "Chiến tranh cục bộ".
         </p>
         <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-8">
-          Mỹ không thực hiện tổng tuyển cử thống nhất đất nước, thay vào đó dựng
-          lên chính quyền Ngô Đình Diệm ở miền Nam và tiến hành chiến tranh xâm
-          lược.
+          Quyết tâm chiến lược: “Chiến tranh cục bộ” của Mỹ là cuộc chiến tranh
+          xâm lược thực dân mới, bế tắc và đầy mâu thuẫn. Trung ương Đảng khẳng
+          định đủ điều kiện và sức mạnh để đánh và thắng Mỹ.
         </p>
         <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-8">
-          Mỹ chính thức đưa quân vào Việt Nam: lính thủy đánh bộ Mỹ đổ bộ vào Đà
-          Nẵng, mở đầu chiến lược "Chiến tranh cục bộ".
+          Mục tiêu chiến lược: Đánh bại đế quốc Mỹ trong mọi tình huống, bảo vệ
+          miền Bắc, giải phóng miền Nam, hoàn thành cách mạng dân tộc dân chủ
+          nhân dân và tiến tới thống nhất đất nước.
+        </p>
+
+        <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-8">
+          Phương châm chiến lược: Đánh lâu dài, dựa vào sức mình là chính, càng
+          đánh càng mạnh. Tập trung lực lượng hai miền mở các cuộc tiến công
+          lớn, tranh thủ thời cơ giành thắng lợi quyết định.
+        </p>
+
+        <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-8">
+          Tư tưởng chỉ đạo: <br />
+          + Miền Nam: Giữ vững và phát triển thế tiến công, kiên quyết tiến công
+          liên tục. Kết hợp đấu tranh quân sự với chính trị, thực hiện ba mũi
+          giáp công, đấu tranh trên cả ba vùng chiến lược. Đấu tranh quân sự giữ
+          vai trò quyết định trực tiếp.
+          <br /> + Miền Bắc: Vừa xây dựng kinh tế, quốc phòng vững mạnh, vừa
+          tiến hành chiến tranh nhân dân chống chiến tranh phá hoại của Mỹ. Động
+          viên cao nhất sức người, sức của chi viện miền Nam, chuẩn bị đánh bại
+          địch nếu chiến tranh lan rộng.
+        </p>
+
+        <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-8">
+          Quan hệ và nhiệm vụ cách mạng hai miền: Miền Nam là tiền tuyến lớn,
+          miền Bắc là hậu phương lớn. Bảo vệ miền Bắc và giải phóng miền Nam là
+          hai nhiệm vụ gắn bó mật thiết. Cả nước cùng quyết tâm “Tất cả để đánh
+          thắng giặc Mỹ xâm lược”.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <Image
@@ -61,9 +88,12 @@ const data = [
     content: (
       <div>
         <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-8">
-          Sự kiện Tết Mậu Thân (Việt Nam): Tổng tiến công và nổi dậy của quân
-          Giải phóng làm Mỹ chấn động, buộc Tổng thống Johnson tuyên bố ngừng
-          ném bom miền Bắc.
+          Cuộc tổng tiến công và nổi dậy Mậu Thân 1968 là một đòn tiến công
+          chiến lược đánh vào tận hang ổ kẻ thù.
+        </p>
+        <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-8">
+          {"=>"} Thất bại chiến lược có tính chất bước ngoặt, khởi đầu quá trình
+          đi đến thất bại hoàn toàn của Mỹ và Việt Nam Cộng hòa.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <iframe
@@ -128,6 +158,10 @@ const data = [
         </div>
       </div>
     ),
+  },
+  {
+    title: "1975",
+    content: <div></div>,
   },
 ];
 const SectionOne = () => {

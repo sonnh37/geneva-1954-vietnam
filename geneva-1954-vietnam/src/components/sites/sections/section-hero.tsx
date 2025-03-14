@@ -9,7 +9,7 @@ const SectionHero = () => {
 
   const bgImage =
     "https://vnanet.vn/Data/Articles/2020/01/09/4362936/vna_potal_90_nam_dcs_viet_nam_dang_lanh_dao_xay_dung_cnxh_o_mien_bac_va_dau_tranh_chong_my_-_nguy_o_mien_nam_1954_%E2%80%93_1965___151645204_stand.jpg";
-  const title = "Thống nhất đất nước (1945-1975)";
+  const title = "Thống nhất đất nước (1954-1975)";
   const subtitle = "Chương 2 - Nhóm 5 - Môn VNR202";
 
   return (
