@@ -19,12 +19,12 @@ const TimelineItem = ({
   height = undefined,
 }: TimelineItemProps) => (
   <div className="relative w-full mb-16">
-    <div className="md:flex items-center justify-between">
+    <div className="md:flex gap-4 items-center justify-between">
       {/* Image Section */}
       <motion.div
         initial={{ opacity: 0, x: isRight ? 30 : -30 }}
         whileInView={{ opacity: 1, x: 0 }}
-        className={`w-full md:w-[42%] ${isRight ? "md:order-2" : "md:order-1"}`}
+        className={`${isRight ? "md:order-2" : "md:order-1"}`}
       >
         <div
           className={`relative h-64 md:h-${

@@ -4,6 +4,7 @@ import TimelineNav from "../time-line-nav";
 import SectionZero from "./sections/section-0";
 import SectionOne from "./sections/section-1";
 import SectionTwo from "./sections/section-2";
+import SectionTwoOne from "./sections/section-2-1";
 import SectionThree from "./sections/section-3";
 import SectionFour from "./sections/section-4";
 import SectionFive from "./sections/section-5";
@@ -28,6 +29,7 @@ const StorytellingPage = () => {
 
       {/* Section 2: Giai cấp công nhân hiện nay */}
       <SectionTwo />
+      <SectionTwoOne />
 
       {/* Section 3: Sứ mệnh lịch sử của GCCN Việt Nam */}
       <SectionThree />

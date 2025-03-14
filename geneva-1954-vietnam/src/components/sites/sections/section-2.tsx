@@ -16,12 +16,14 @@ import { Separator } from "@/components/ui/separator";
 import TimelineItem from "@/components/time-line-item";
 import FeatureCard from "@/components/feature-card";
 import { ArrowRight } from "lucide-react";
+import VerticalTimeline from "@/components/process-stage";
+import Timeline from "@/components/growth-timeline";
 
 const SectionTwo = () => {
   const bgImage =
     "https://vnanet.vn/Data/Articles/2020/02/03/4428965/vna_potal_90_nam_dcs_viet_nam_dang_lanh_dao_xay_dung_va_bao_ve_chinh_quyen_cach_mang_khang_chien_chong_thuc_dan_phap_thang_loi_1945_-_1954_stand.jpg";
   const title = "Lãnh đạo cuộc kháng chiến chống Mỹ cứu nước";
-  const subtitle = undefined;
+  const subtitle = "Miền Bắc";
 
   return (
     <section
@@ -69,7 +71,6 @@ const SectionTwo = () => {
           ]}
           spaceBetween={50}
           slidesPerView={1}
-          
           scrollbar={{ draggable: true }}
           keyboard={{ enabled: true }} // Điều khiển bằng phím mũi tên
           mousewheel={{ forceToAxis: true }} // Điều khiển bằng cuộn chuột
@@ -78,28 +79,22 @@ const SectionTwo = () => {
           <SwiperSlide>
             <div className="max-w-6xl mx-auto px-4 space-y-6">
               <h4 className="scroll-m-20 text-xl text-white font-semibold tracking-tight">
-                Ở miền bắc, Mỹ đã:
+                - Mỹ đã:
               </h4>
               <div className="">
                 <TimelineItem
-                  year=""
-                  title=""
-                  description="Dùng không quân, hải quân đánh phá miền Bắc
-Ý đồ đưa miền Bắc trở về thời kỳ đồ đá,
- ngăn chặn chi viện miền Nam
-"
+                  year="1965 - 1972"
+                  title="Mỹ leo thang chiến tranh phá hoại miền Bắc"
+                  description="Dùng không quân, hải quân đánh phá miền Bắc.
+Ý đồ đưa miền Bắc trở về thời kỳ đồ đá, ngăn chặn chi viện miền Nam."
                   isRight={false}
                   image="https://images.kienthuc.net.vn/zoom/800/uploaded/lenam/2013_12_24/phantom_kienthuc_4702_trss.jpg"
                 />
                 <TimelineItem
-                  year=""
-                  title=""
-                  description="5/8/1964 Mỹ dựng lên
- “sự kiện Vịnh Bắc Bộ” 
-Bộ trưởng Quốc phòng Mỹ 
-Robert S. McNamara
-
-"
+                  year="5/8/1964"
+                  title="Sự kiện Vịnh Bắc Bộ"
+                  description="Mỹ dựng lên “sự kiện Vịnh Bắc Bộ”.  
+Bộ trưởng Quốc phòng Mỹ Robert S. McNamara tuyên bố sự kiện này để lấy cớ leo thang chiến tranh ở Việt Nam."
                   isRight={true}
                   image="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSo9jHxGt45Fi0psKm2kW4HnAeY9Cef22fbIpw517jYkL50Lb11"
                 />
@@ -109,7 +104,7 @@ Robert S. McNamara
           <SwiperSlide>
             <div className="max-w-6xl mx-auto px-4 space-y-6">
               <h4 className="scroll-m-20 text-xl text-white font-semibold tracking-tight">
-                Ở miền bắc, Việt Nam đã:
+                - Việt Nam đã:
               </h4>
               <FeatureCard
                 icon={ArrowRight}
@@ -178,34 +173,6 @@ nhà không tiếc”
                   />
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="max-w-6xl mx-auto px-4 space-y-6">
-              <h4 className="scroll-m-20 text-xl text-white font-semibold tracking-tight">
-                Ở miền nam, Việt Nam đã:
-              </h4>
-              <FeatureCard
-                icon={ArrowRight}
-                title=""
-                description="Lãnh đạo nhân dân và quân đội tiến hành đấu tranh chính trị kết hợp với đấu tranh vũ trang.
-"
-              />
-              <FeatureCard
-                icon={ArrowRight}
-                title=""
-                description={`Thực hiện chiến lược chiến tranh nhân dân, đánh bại các chiến lược chiến tranh của Mỹ như "Chiến tranh cục bộ", "Việt Nam hóa chiến tranh".
-
-`}
-              />
-              <FeatureCard
-                icon={ArrowRight}
-                title=""
-                description="Giải phóng hoàn toàn miền Nam qua các chiến dịch lớn: Tây Nguyên, Huế - Đà Nẵng, và đặc biệt là Chiến dịch Hồ Chí Minh lịch sử (4/1975).
-
-"
-              />
             </div>
           </SwiperSlide>
         </Swiper>
