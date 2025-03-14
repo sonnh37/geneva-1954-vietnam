@@ -17,7 +17,7 @@ const TimelineItem = ({ data }: { data: TimelineItemType }) => {
         transition={{ duration: 0.8 }}
         className="relative flex w-[400px] max-w-[95%] flex-col items-center bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 px-4 py-[10px] text-center shadow-[0_0_2px_rgba(0,0,0,0.3)] after:absolute after:right-[-7.5px] after:top-[calc(50%-7.5px)] after:h-4 after:w-4 after:rotate-45 after:content-normal after:bg-white after:shadow-[1px_-1px_1px_rgba(0,0,0,0.2)] group-odd:items-center group-odd:text-center group-odd:after:left-[-7.5px] group-odd:after:right-auto group-odd:after:shadow-[-1px_1px_1px_rgba(0,0,0,0.2)] sm:max-w-[70%] md:items-end md:p-4 md:text-right md:group-odd:items-start md:group-odd:text-left"
       >
-        <p className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-3xl font-semibold">
+        <p className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] uppercase text-3xl font-semibold">
           {date}
         </p>
         <h3 className="scroll-m-20 text-2xl text-white/80 font-semibold tracking-tight">
