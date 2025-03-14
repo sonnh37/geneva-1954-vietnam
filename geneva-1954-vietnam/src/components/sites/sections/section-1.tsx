@@ -19,7 +19,7 @@ const data = [
           <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-4">
             Hội nghị lần thứ 11 (3-1965) và Hội nghị lần thứ 12 (12-1965) của
             Ban Chấp hành Trung ương Đảng đã phát động cuộc kháng chiến chống
-            Mỹ.
+            Mỹ
           </p>
 
           <div className="ml-6">
