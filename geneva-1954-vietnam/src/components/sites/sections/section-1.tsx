@@ -18,43 +18,42 @@ const data = [
         <div>
           <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-4">
             Hội nghị lần thứ 11 (3-1965) và Hội nghị lần thứ 12 (12-1965) của
-            Ban Chấp hành Trung ương Đảng đã phát động cuộc kháng chiến chống
-            Mỹ
+            Ban Chấp hành Trung ương Đảng đã phát động cuộc kháng chiến chống Mỹ
           </p>
 
           <div className="ml-6">
-            <p className="text-neutral-200 text-xl md:text-xl font-normal mb-4">
+            <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-4">
               <strong>+ Quyết tâm chiến lược:</strong> “Chiến tranh cục bộ” của
               Mỹ là cuộc chiến tranh xâm lược thực dân mới, bế tắc và đầy mâu
               thuẫn. Trung ương Đảng khẳng định đủ điều kiện và sức mạnh để đánh
               và thắng Mỹ.
             </p>
 
-            <p className="text-neutral-200 text-xl md:text-xl font-normal mb-4">
+            <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-4">
               <strong>+ Mục tiêu chiến lược:</strong> Đánh bại đế quốc Mỹ trong
               mọi tình huống, bảo vệ miền Bắc, giải phóng miền Nam, hoàn thành
               cách mạng dân tộc dân chủ nhân dân và tiến tới thống nhất đất
               nước.
             </p>
 
-            <p className="text-neutral-200 text-xl md:text-xl font-normal mb-4">
+            <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-4">
               <strong>+ Phương châm chiến lược:</strong> Đánh lâu dài, dựa vào
               sức mình là chính, càng đánh càng mạnh. Tập trung lực lượng hai
               miền mở các cuộc tiến công lớn, tranh thủ thời cơ giành thắng lợi
               quyết định.
             </p>
 
-            <p className="text-neutral-200 text-xl md:text-xl font-normal mb-4">
+            <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-4">
               <strong>+ Tư tưởng chỉ đạo:</strong> <br />
               <div className="ml-6 mt-2">
-                <p className="text-neutral-200 text-xl md:text-xl font-normal mb-4">
+                <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-4">
                   <strong>- Miền Nam:</strong> Giữ vững và phát triển thế tiến
                   công, kiên quyết tiến công liên tục. Kết hợp đấu tranh quân sự
                   với chính trị, thực hiện ba mũi giáp công, đấu tranh trên cả
                   ba vùng chiến lược. Đấu tranh quân sự giữ vai trò quyết định
                   trực tiếp.
                 </p>
-                <p className="text-neutral-200 text-xl md:text-xl font-normal mb-4">
+                <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-4">
                   <strong>- Miền Bắc:</strong> Vừa xây dựng kinh tế, quốc phòng
                   vững mạnh, vừa tiến hành chiến tranh nhân dân chống chiến
                   tranh phá hoại của Mỹ. Động viên cao nhất sức người, sức của
@@ -64,7 +63,7 @@ const data = [
               </div>
             </p>
 
-            <p className="text-neutral-200 text-xl md:text-xl font-normal mb-4">
+            <p className="text-neutral-200 text-xl md:text-2xl font-normal mb-4">
               <strong>Quan hệ và nhiệm vụ cách mạng hai miền:</strong> Miền Nam
               là tiền tuyến lớn, miền Bắc là hậu phương lớn. Bảo vệ miền Bắc và
               giải phóng miền Nam là hai nhiệm vụ gắn bó mật thiết. Cả nước cùng
@@ -181,10 +180,6 @@ const data = [
         </div>
       </div>
     ),
-  },
-  {
-    title: "1975",
-    content: <div></div>,
   },
 ];
 const SectionOne = () => {
